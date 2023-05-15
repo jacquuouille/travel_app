@@ -1,14 +1,38 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:travel_app/screens/activity_screen.dart';
+import 'package:travel_app/screens/restaurant_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+import 'flight_screen.dart';
+import 'hotel_screen.dart';
+
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _selectedTab = 0;
+
+  final List _pages = const [
+    ActivityScreen(), 
+    HotelScreen(),
+    FlightScreen(),
+    RestaurantScreen(),
+  ];
+
+  _changedTab(int index) {
+    setState( () {
+      _selectedTab = index;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Container( 
+    return 
+    Container( 
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topLeft, 
@@ -19,10 +43,37 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      child: const Scaffold(
-        appBar: _CustomAppBar(), 
-        bottomNavigationBar: _NavBar(),
-      ),
+      child: Scaffold(
+        appBar: const _CustomAppBar(), 
+        body: _pages[_selectedTab],
+        bottomNavigationBar: 
+        BottomNavigationBar( 
+          type: BottomNavigationBarType.fixed,
+          currentIndex: _selectedTab, 
+          showUnselectedLabels: false, 
+          // selectedItemColor: Get.isDarkMode ? Colors.white : Colors.black,
+          selectedItemColor: Get.isDarkMode ? Colors.white : Colors.black,
+          onTap: (index) => _changedTab(index),
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.local_activity), 
+              label: 'Activity'
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.hotel), 
+              label: 'Hotels'
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.flight_takeoff), 
+              label: 'Flights'
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.restaurant), 
+              label: 'Restaurants'
+            ),
+          ]
+            )
+          ),
     );
   }
 }
@@ -67,35 +118,3 @@ class _CustomAppBar extends StatelessWidget with PreferredSizeWidget{
   Size get preferredSize => const Size.fromHeight(56.0);
 }
 
-
-
-class _NavBar extends StatelessWidget {
-  const _NavBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      showUnselectedLabels: false, 
-      selectedItemColor: Get.isDarkMode ? Colors.white : Colors.black,
-      items: const [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.local_activity), 
-          label: 'Activity'
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.hotel), 
-          label: 'Hotels'
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.flight_takeoff), 
-          label: 'Flights'
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.restaurant), 
-          label: 'Restaurants'
-        ),
-      ]
-    );
-  }
-}
