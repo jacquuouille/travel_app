@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:travel_app/screens/activity_screen.dart';
 import 'package:travel_app/screens/restaurant_screen.dart';
-
 import 'flight_screen.dart';
 import 'hotel_screen.dart';
 
@@ -51,7 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
           type: BottomNavigationBarType.fixed,
           currentIndex: _selectedTab, 
           showUnselectedLabels: false, 
-          // selectedItemColor: Get.isDarkMode ? Colors.white : Colors.black,
           selectedItemColor: Get.isDarkMode ? Colors.white : Colors.black,
           onTap: (index) => _changedTab(index),
           items: const [

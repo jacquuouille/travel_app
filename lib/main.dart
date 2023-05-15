@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:travel_app/screens/activity_screen.dart';
 import 'package:travel_app/screens/flight_screen.dart';
 import 'package:travel_app/screens/home_screen.dart';
 import 'package:travel_app/screens/hotel_screen.dart';
 import 'package:travel_app/screens/restaurant_screen.dart';
-
 import 'config/theme.dart';
 
 void main() {
@@ -27,12 +25,16 @@ class MyApp extends StatelessWidget {
       darkTheme: darkTheme(),
       home: const HomeScreen(),
       // initialRoute: '/activities', 
-      routes: {
-        ActivityScreen.routeName: (context) => const ActivityScreen(), 
-        HotelScreen.routeName: (context) => const HotelScreen(), 
-        FlightScreen.routeName: (context) => const FlightScreen(), 
-        RestaurantScreen.routeName: (context) => const RestaurantScreen(), 
-      }, 
+      // routes: {
+      //   ActivityScreen.routeName: (context) => const ActivityScreen(), 
+      //   HotelScreen.routeName: (context) => const HotelScreen(), 
+      //   FlightScreen.routeName: (context) => const FlightScreen(), 
+      //   RestaurantScreen.routeName: (context) => const RestaurantScreen(), 
+      // },
+      getPages: [
+        GetPage(name: '/activities', page: () => const ActivityScreen(), transition: Transition.leftToRight), 
+        GetPage(name: '/hotels', page: () => const HotelScreen(), transition: Transition.leftToRight), 
+      ] 
     );
   }
 }

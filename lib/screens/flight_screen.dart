@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import '../widgets/custom_header.dart';
 
 class FlightScreen extends StatelessWidget {
   const FlightScreen({super.key});
@@ -7,6 +8,6 @@ class FlightScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const CustomHeader(title: 'Flights');
   }
 }
