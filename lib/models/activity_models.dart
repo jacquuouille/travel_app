@@ -42,7 +42,7 @@ class Activity {
     ),
     Activity(
       id: '4', 
-      title: 'Colosseum Arena Floor, Roman Forum and Palatine Hill', 
+      title: 'Colosseum Arena Floor', 
       description: "Exclusive priority access tickets allow you to skip the line and enter the Colosseum through the Gladiator's Gate.",
       url: 'assets/images/colosseum.jpg', 
       price: 70.00,
@@ -58,7 +58,7 @@ class Activity {
     ),
     Activity(
       id: '6', 
-      title: "Pompeii, Amalfi Coast and Positano", 
+      title: "Pompeii and Positano", 
       description: "With this Pompeii, Amalfi Coast and Positano small-group day trip you can mark three sites off your list that are so incredible!",
       url: 'assets/images/amalfi_coast.jpg', 
       price: 85.00,
