@@ -54,7 +54,7 @@ class Activity {
       description: "Guarantee your entry into two of Venice's star attractions on a skip-the-line tour of Doge's Palace.",
       url: 'assets/images/basilica.jpg', 
       price: 75.00,
-      rating: 3.5,
+      rating: 3,
     ),
     Activity(
       id: '6', 
@@ -62,7 +62,7 @@ class Activity {
       description: "With this Pompeii, Amalfi Coast and Positano small-group day trip you can mark three sites off your list that are so incredible!",
       url: 'assets/images/amalfi_coast.jpg', 
       price: 85.00,
-      rating: 4.5,
+      rating: 5,
     ), 
     Activity(
       id: '7', 
@@ -78,7 +78,7 @@ class Activity {
       description: "The popular pioneering Food Tour of Trastevere is here to welcome on this tasty experience!",
       url: 'assets/images/food_tour.jpg', 
       price: 45.00,
-      rating: 3.5,
+      rating: 3,
     ), 
     Activity(
       id: '9', 
@@ -86,7 +86,7 @@ class Activity {
       description: "The islands of Murano and Burano, with their artisan glass and lace workshops.",
       url: 'assets/images/murano_burano.jpg', 
       price: 25.00,
-      rating: 3.5,
+      rating: 3,
     )
   ];
 
