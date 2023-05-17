@@ -14,9 +14,7 @@ class ClipContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     bool isDark = Theme.of(context).brightness == Brightness.dark; 
-
-    return 
-       SingleChildScrollView(
+    return SingleChildScrollView(
          child: Padding(
            padding: const EdgeInsets.all(10.0),
            child: Column(
