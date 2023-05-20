@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:travel_app/screens/activity_screen.dart';
 import 'package:travel_app/screens/restaurant_screen.dart';
+import 'basket_screen.dart';
 import 'flight_screen.dart';
 import 'hotel_screen.dart';
 
