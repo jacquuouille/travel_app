@@ -148,7 +148,6 @@ class _CustomAppBar extends StatelessWidget with PreferredSizeWidget{
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: 
-      // isOnBoarding ? Container() :
        AppBar(
         title: Text(
           'TravelApp', 

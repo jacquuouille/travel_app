@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:travel_app/screens/activity_screen.dart';
+import 'package:travel_app/screens/basket_screen.dart';
 import 'package:travel_app/screens/home_screen.dart';
 import 'package:travel_app/screens/hotel_screen.dart';
 import 'config/theme.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(name: '/activities', page: () => const ActivityScreen(), transition: Transition.leftToRight), 
         GetPage(name: '/hotels', page: () => const HotelScreen(), transition: Transition.leftToRight), 
+        GetPage(name: '/basket', page: () => const BasketScreen(), transition: Transition.leftToRight), 
       ] 
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:travel_app/screens/basket_screen.dart';
 import '../models/activity_models.dart';
 
 class ClipContainer extends StatelessWidget {
@@ -92,7 +93,13 @@ class ClipContainer extends StatelessWidget {
                               ),
                             ),
                             ElevatedButton(
-                              onPressed: () {}, 
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (_) => const BasketScreen(),
+                                  ),
+                                );
+                              }, 
                               style: ElevatedButton.styleFrom(
                                 primary: Color.fromARGB(255, 255, 196, 3), 
                                 shape: RoundedRectangleBorder(
