@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:travel_app/screens/activity_screen.dart';
-import 'package:travel_app/screens/restaurant_screen.dart';
-import 'basket_screen.dart';
+import 'package:travel_app/screens/profile_screen.dart';
 import 'flight_screen.dart';
 import 'hotel_screen.dart';
 
@@ -21,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ActivityScreen(), 
     HotelScreen(),
     FlightScreen(),
-    RestaurantScreen(),
+    ProfileScreen(),
   ];
 
   _changedTab(int index) {
@@ -169,6 +168,13 @@ class _CustomAppBar extends StatelessWidget with PreferredSizeWidget{
               icon: Icon(
                 Get.isDarkMode ? Icons.dark_mode : Icons.light_mode,
               )
+          ), 
+          IconButton(
+            onPressed: () {        
+            }, 
+            icon: const Icon(
+              Icons.shopping_bag
+            )
           )
         ]
       ),
