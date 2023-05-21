@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_config/flutter_config.dart';
 import 'package:get/get.dart';
 import 'package:travel_app/screens/activity_screen.dart';
 import 'package:travel_app/screens/home_screen.dart';
 import 'package:travel_app/screens/hotel_screen.dart';
 import 'config/theme.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // Required by FlutterConfig
+  await FlutterConfig.loadEnvVariables();
+  
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

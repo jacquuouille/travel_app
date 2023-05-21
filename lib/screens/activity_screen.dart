@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:get/get.dart';
 import '../models/activity_models.dart';
 import '../widgets/custom_header.dart';
 import 'activity_details_screen.dart';

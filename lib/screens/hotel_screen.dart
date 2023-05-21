@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import '../widgets/custom_header.dart';
 
 class HotelScreen extends StatelessWidget {
@@ -8,6 +8,18 @@ class HotelScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomHeader(title: 'Hotels');
-  }
+    final size = MediaQuery.of(context).size;
+
+    return Scaffold(
+           body: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+             children: [
+               const CustomHeader(
+                  title: "Hotels"
+                ),
+                Container()
+             ],
+           ),
+          );
+      }
 }
