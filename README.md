@@ -18,7 +18,7 @@ How does the app work?
 <br />
 
 <p align="center">
-<img src="https://www.cjoint.com/doc/23_05/MEslxQLQEHK_Screenshot-2023-05-18-at-13.22.20.png" height="487" width="259">
+<img src="welcome_screen.png" height="487" width="259">
 <img src="https://www.cjoint.com/doc/23_05/MEslyRERCiK_Screenshot-2023-05-18-at-13.22.35.png" height="487" width="259">
 <img src="https://www.cjoint.com/doc/23_05/MEslzi71aFK_Screenshot-2023-05-18-at-13.22.57.png" height="487" width="259">
 <p align="center">
