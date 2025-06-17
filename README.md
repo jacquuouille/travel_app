@@ -18,13 +18,9 @@ How does the app work?
 <br />
 
 <p align="center">
-<img src="welcome_screen.png" height="487" width="259">
-<img src="https://www.cjoint.com/doc/23_05/MEslyRERCiK_Screenshot-2023-05-18-at-13.22.35.png" height="487" width="259">
-<img src="https://www.cjoint.com/doc/23_05/MEslzi71aFK_Screenshot-2023-05-18-at-13.22.57.png" height="487" width="259">
-<p align="center">
-<img src="https://www.cjoint.com/doc/23_05/MEslxQLQEHK_Screenshot-2023-05-18-at-13.22.20.png" height="487" width="259">
-<img src="https://www.cjoint.com/doc/23_05/MEslAmCUfAK_Screenshot-2023-05-18-at-13.23.11.png" height="487" width="259">
-<img src="https://www.cjoint.com/doc/23_05/MEslAKFZMbK_Screenshot-2023-05-18-at-13.23.23.png" height="487" width="259">
+<img src="welcome_screen.png" height="487" width="259"> 
+<img src="activity.png" height="487" width="259">
+<img src="details_activity.png" height="487" width="259">
 
 >> Source Code
 [https://courses.sideguide.dev/courses/flutter](https://www.youtube.com/watch?v=bjs--e5ig7U&list=PLCAZyR6zw2pwi5LqvJz9fEKFmBp7nA2Rf&index=4)
